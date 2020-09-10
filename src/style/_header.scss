@@ -1,0 +1,28 @@
+.body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $gray-dark solid 2px;
+}
+
+.body-header h1 {
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+}
+
+.btn-login {
+  @include btn-root(35px, 90px, $gray-dark, $primary-color, $primary-color);
+  margin-right: 20px;
+}
+
+.btn-register {
+  @include btn-root(35px, 90px, $primary-color, $white, $primary-color);
+}

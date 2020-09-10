@@ -2,3 +2,12 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn-root($height, $width, $background-color, $color, $boder-color) {
+  height: $height;
+  width: $width;
+  background-color: $background-color;
+  color: $color;
+  border-color: $boder-color;
+  border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+.main-body {
+  flex: 1;
+}
+
+.form-body {
+  border: $gray-dark solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 40% 0 40%;
+  border-radius: 20px;
+}
+
+.form-header {
+  h2 {
+    margin-top: 15%;
+    color: white;
+  }
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.choose-one {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+//基类
+.form-info {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+.user-info {
+  @extend .form-info;
+  background-color: $body-bg;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  height: 30px;
+}
+
+.forget-password {
+  @extend .form-info;
+  color: $primary-color;
+}
+
+.form-btn-login {
+  @extend .form-info;
+  @include btn-root(40px, 80%, $body-bg, $primary-color, $primary-color);
+}
+
+.form-btn-register {
+  @extend .form-info;
+  @include btn-root(40px, 80%, $primary-color, $white, $primary-color);
+  margin-bottom: 15%;
+}

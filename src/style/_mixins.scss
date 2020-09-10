@@ -11,3 +11,7 @@
   border-color: $boder-color;
   border-radius: 10px;
 }
+
+@mixin label-root($color) {
+  color: $color;
+}

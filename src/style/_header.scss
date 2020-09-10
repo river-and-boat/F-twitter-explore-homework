@@ -19,7 +19,7 @@
 }
 
 .btn-login {
-  @include btn-root(35px, 90px, $gray-dark, $primary-color, $primary-color);
+  @include btn-root(35px, 90px, $body-bg, $primary-color, $primary-color);
   margin-right: 20px;
 }
 

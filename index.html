@@ -15,18 +15,24 @@
       <button class="btn-register">注册</button>
     </nav>
   </header>
+  <!--      TODO feedback: 这里css class的命名叫做'main'就可以了，因为main就已经足表意了，其他class同理-->
   <main class="main-body">
     <form class="form-body">
       <header class="form-header">
+        <!--      TODO feedback: 这行文字，它只是在样式上加粗了，但是它并不是这个页面的heading, 所以不应该使用h标签，使用p标签，然后用css把它加粗就对了-->
         <h2>查看世界上正在发生的事情</h2>
       </header>
+<!--      TODO feedback: 一般main标签指整个页面的main, 而不是指某一块区域的main，所以一个HTML文件只会有一个mian-->
       <main class="form-main">
+<!--        TODO feedback: label标签需要使用它的for属性，和对应的input关联起来，需要去了解一下这一块-->
         <label class="form-info">电话、邮件地址或用户名</label>
         <input type="text" class="user-info" />
         <label class="form-info">密码</label>
         <input type="text" class="user-info" />
+        <!--      TODO feedback: 一般忘记密码是一个连接，那么这里就应该使用<a>标签-->
         <label class="forget-password">忘记密码？</label>
         <button class="form-btn-login">登录</button>
+        <!--      TODO feedback：这里使用label标签不正确，应该使用p-->
         <label class="choose-one">或</label>
         <button class="form-btn-register">注册</button>
       </main>

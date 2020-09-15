@@ -32,6 +32,7 @@
 }
 
 //基类
+// TODO feedback: 看了一下这个class的使用场景，更适合作为一个mixin。了解一下mixin和extend的区别
 .form-info {
   margin-left: 10%;
   margin-right: 10%;
